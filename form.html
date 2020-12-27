@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>FORMULAIRE</title>
+		<meta charset="utf-8">
+		<link rel="stylesheet" type="text/css" href="style.css">
+	</head>
+	<body>
+		<div class="a">
+			<fieldset>
+				<legend>FORMULAIRE</legend>
+					<p>
+						<label>NOM</label><br>
+						<input type="text" name=""  id="nomblur"><br><br>
+					</p>
+					<p>
+						<label>PRENOM</label><br>
+						<input type="text" name="" onblur="verifprenom()" id="prenom"><br><br>
+					</p>
+					<p>			
+						<label>TELEPHONE</label><br>
+						<input type="text" name="" id="tel"><br><br>
+					</p>
+					<p>
+						<input type="submit" onclick="valider()" value="ENREGISTRER">
+					</p>
+			</fieldset>		
+		</div>
+	<div id="infos">
+		<h2 id="h" hidden="">LES INFORMATIONS SAISIES</h2>
+		<table id="tab" cellspacing="0" hidden="" border="1">
+			<tr>
+				<th>NOM</th>
+				<th>PRENOM</th>
+				<th>TELEPHONE</th>
+				<th>ACTION</th>
+			</tr>
+		</table>
+	</div>
+	</body>
+	<script type="text/javascript" src="script.js"></script>
+</html>
